@@ -13,10 +13,10 @@ th {
   color: white;
 }
 
-tr.alpha {
+tr:nth-child(odd) {
   background-color: gray;
 }
 
-tr.bravo {
+tr:nth-child(even) {
   background-color: lightgray;
 }
