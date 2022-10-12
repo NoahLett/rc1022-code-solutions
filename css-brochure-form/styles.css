@@ -1,0 +1,55 @@
+h1 {
+  font-family: AtlasGrotesk, sans-serif;
+  font-size: 1rem;
+  color: #ec5d57;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+div {
+  max-width: 25rem;
+  margin: auto;
+}
+
+.email-label,
+.name-label,
+.location-label,
+.quantity-label {
+  font-family: "Brandon Grotesque", sans-serif;
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: #3f3f3f;
+  margin: 0.75rem;
+  line-height: 1.4rem;
+}
+
+.email,
+.name,
+.location,
+.quantity {
+  width: 400px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cfd2d1;
+}
+
+.quantity {
+  background-color: #f3f3f3;
+}
+
+.submit {
+  font-family: AtlasGrotesk, sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  float: right;
+  background-color: #ec5d57;
+  color: white;
+  font-weight: bold;
+  width: 5.5rem;
+  padding: 0.5rem;
+  border-radius: 200px;
+  border: #ec5d57;
+}
