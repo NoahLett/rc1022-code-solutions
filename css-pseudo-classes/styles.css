@@ -1,0 +1,22 @@
+button {
+  padding: 7px 15px;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+tr.alpha {
+  background-color: gray;
+}
+
+tr.bravo {
+  background-color: lightgray;
+}
