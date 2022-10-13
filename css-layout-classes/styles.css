@@ -8,12 +8,16 @@ div.row {
   display: flex;
 }
 
+.column-full {
+  width: 100%;
+}
+
 .column-one-third {
   flex-basis: calc(100% / 3);
 }
 
 .column-two-thirds {
-  flex-basis: calc(2 / 3);
+  flex-basis: calc(100% * (2 / 3));
 }
 
 .column-one-fourth {
@@ -35,9 +39,6 @@ p {
   font-size: 0.95rem;
 }
 
-#kirby,
-#fox,
-#pikachu,
-#ness {
-  max-width: 100%;
+img {
+  width: 100%;
 }
