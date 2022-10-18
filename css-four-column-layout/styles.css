@@ -1,0 +1,85 @@
+.container {
+  background-color: #f7f8fa;
+  max-width: 1800px;
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.top-header {
+  font-family: Barlow, sans-serif;
+  text-align: center;
+}
+
+.column-full {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.column-one-fourths {
+  display: flex;
+  flex-basis: calc(100% / 4);
+  justify-content: center;
+}
+
+.screen {
+  width: 90%;
+}
+
+.icon {
+  width: 25%;
+}
+
+.head {
+  font-family: Barlow, sans-serif;
+  font-size: 1.25rem;
+}
+
+.sub-text {
+  font-family: Barlow, sans-serif;
+}
+
+#phones {
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#phone-one,
+#phone-two,
+#phone-three,
+#phone-four {
+  justify-content: center;
+}
+
+#icon-block {
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#icon-one,
+#icon-two,
+#icon-three,
+#icon-four {
+  justify-content: center;
+}
+
+#text-block {
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sub-text-block {
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
