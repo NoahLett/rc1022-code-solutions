@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Four Column Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="column-full">
+          <h1 class="top-header">How It Works</h1>
+        </div>
+      </div>
+      <div class="row" id="phones">
+        <div class="column-one-fourths" id="phone-one">
+          <img src="images/screen-1.png" alt="Phone Screen One" class="screen">
+        </div>
+        <div class="column-one-fourths" id="phone-two">
+          <img src="images/screen-2.png" alt="Phone Screen Two" class="screen">
+        </div>
+        <div class="column-one-fourths" id="phone-three">
+          <img src="images/screen-3.png" alt="Phone Screen Three" class="screen">
+        </div>
+        <div class="column-one-fourths" id="phone-four">
+          <img src="images/screen-4.png" alt="Phone Screen Four" class="screen">
+        </div>
+      </div>
+      <div class="row" id="icon-block">
+        <div class="column-one-fourths" id="icon-one">
+          <img src="images/switch-icon.png" alt="Switch Icon" class="icon">
+        </div>
+        <div class="column-one-fourths" id="icon-two">
+          <img src="images/filter-icon.png" alt="Filter Icon" class="icon">
+        </div>
+        <div class="column-one-fourths" id="icon-three">
+          <img src="images/slider-icon.png" alt="Slider Icon" class="icon">
+        </div>
+        <div class="column-one-fourths" id="icon-four">
+          <img src="images/bars-icon.png" alt="bars icon" class="icon">
+        </div>
+      </div>
+      <div class="row" id="text-block">
+        <div class="column-one-fourths">
+          <h2 class="head"> App Switching</h2>
+        </div>
+        <div class="column-one-fourths">
+          <h2 class="head">Trip Filtering</h2>
+        </div>
+        <div class="column-one-fourths">
+          <h2 class="head">Service Filters</h2>
+        </div>
+        <div class="column-one-fourths">
+          <h2 class="head">Stats + Mileage</h2>
+        </div>
+      </div>
+      <div class="row" id="sub-text-block">
+        <div class="column-one-fourths">
+          <p class="sub-text">Toggles all your apps on and off.</p>
+        </div>
+        <div class="column-one-fourths">
+          <p class="sub-text">Evaluates your trip requests.</p>
+        </div>
+        <div class="column-one-fourths">
+          <p class="sub-text">Accepts only your ideal trips.</p>
+        </div>
+        <div class="column-one-fourths">
+          <p class="sub-text">Tracks your trips across all apps.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
