@@ -1,0 +1,65 @@
+.container {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column-full {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.column-one-fifths-photo {
+  display: flex;
+  flex-basis: calc(100% / 5);
+  justify-content: center;
+}
+
+.column-one-fifths {
+  display: flex;
+  flex-basis: calc(100% / 5);
+  margin-left: 1.7rem;
+}
+
+.brand {
+  margin-top: 1rem;
+  margin-right: 0.3rem;
+  font-weight: bold;
+}
+
+.size {
+  margin-top: 1rem;
+  color: lightgrey;
+}
+
+.deal {
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  background-color: #fff2e7;
+  font-weight: bold;
+}
+
+.retail {
+  margin-top: 1rem;
+  color: lightgrey;
+  text-decoration: line-through;
+}
+
+h1,
+span {
+  font-family: "DM Sans", sans-serif;
+}
+
+img {
+  width: 85%;
+}
+
+span {
+  font-size: 1.25rem;
+}
