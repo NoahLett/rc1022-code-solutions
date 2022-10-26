@@ -1,0 +1,37 @@
+.row {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.column-full {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+span {
+  text-align: center;
+  font-family: Inconsolata, monospace;
+  font-weight: bold;
+  font-size: 4rem;
+  white-space: pre;
+}
+
+.green {
+  color: #1bcd1d;
+}
+
+.red {
+  color: red;
+}
+
+.black {
+  color: black;
+}
+
+.underscore {
+  border-bottom: 4px solid black;
+  padding-bottom: 4px;
+}
