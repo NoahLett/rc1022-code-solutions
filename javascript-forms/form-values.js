@@ -12,4 +12,5 @@ function handleSubmit(event) {
   object.email = $email;
   object.message = $message;
   console.log(object);
+  document.forms[0].reset();
 }
