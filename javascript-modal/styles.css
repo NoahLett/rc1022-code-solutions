@@ -1,0 +1,70 @@
+html,
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  margin: 0;
+  height: 100vh;
+}
+
+.open-modal-button {
+  margin: 0.5rem;
+  height: 3.5rem;
+  width: 14rem;
+  font-family: sans-serif;
+  font-size: 1.7rem;
+  color: white;
+  background-color: #4a4ae9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px darkslategray;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0 0 0 / 50%);
+}
+
+.modal {
+  width: 500px;
+  height: 250px;
+  position: fixed;
+  top: 40%;
+  right: 35%;
+  text-align: center;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 4px 4px 20px darkslategray;
+}
+
+.question {
+  font-family: sans-serif;
+  font-size: 1.65rem;
+  padding-top: 1.5rem;
+  font-weight: bold;
+}
+
+.answer {
+  font-family: sans-serif;
+  color: white;
+  background-color: #eb5d5d;
+  font-size: 2rem;
+  width: 7rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 2px darkslategray;
+  cursor: pointer;
+  position: relative;
+  top: 10%;
+}
+
+.no-display {
+  display: none;
+}
