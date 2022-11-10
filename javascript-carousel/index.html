@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Carousel</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="column-full">
+        <div class="view" data-view="bulbasaur">
+          <div class="pokemon-wrapper">
+            <i class="fa-sharp fa-solid fa-chevron-left" data-view="jigglypuff"></i>
+            <img class="pokemon-image" src="images/001.png" alt="Bulbasaur">
+            <i class="fa-sharp fa-solid fa-chevron-right" data-view="charmander"></i>
+            <span>
+              <i class="fa-sharp fa-solid fa-circle"></i>
+              <i class="fa-regular fa-circle" data-view="charmander"></i>
+              <i class="fa-regular fa-circle" data-view="squirtle"></i>
+              <i class="fa-regular fa-circle" data-view="pikachu"></i>
+              <i class="fa-regular fa-circle" data-view="jigglypuff"></i>
+            </span>
+          </div>
+        </div>
+        <div class="view hidden" data-view="charmander">
+          <div class="pokemon-wrapper">
+            <i class="fa-sharp fa-solid fa-chevron-left" data-view="bulbasaur"></i>
+            <img class="pokemon-image" src="images/004.png" alt="Charmander">
+            <i class="fa-sharp fa-solid fa-chevron-right" data-view="squirtle"></i>
+            <span>
+              <i class="fa-regular fa-circle" data-view="bulbasaur"></i>
+              <i class="fa-sharp fa-solid fa-circle"></i>
+              <i class="fa-regular fa-circle" data-view="squirtle"></i>
+              <i class="fa-regular fa-circle" data-view="pikachu"></i>
+              <i class="fa-regular fa-circle" data-view="jigglypuff"></i>
+            </span>
+          </div>
+        </div>
+        <div class="view hidden" data-view="squirtle">
+          <div class="pokemon-wrapper">
+            <i class="fa-sharp fa-solid fa-chevron-left" data-view="charmander"></i>
+            <img class="pokemon-image" src="images/007.png" alt="Squirtle">
+            <i class="fa-sharp fa-solid fa-chevron-right" data-view="pikachu"></i>
+            <span>
+              <i class="fa-regular fa-circle" data-view="bulbasaur"></i>
+              <i class="fa-regular fa-circle" data-view="charmander"></i>
+              <i class="fa-sharp fa-solid fa-circle"></i>
+              <i class="fa-regular fa-circle" data-view="pikachu"></i>
+              <i class="fa-regular fa-circle" data-view="jigglypuff"></i>
+            </span>
+          </div>
+        </div>
+        <div class="view hidden" data-view="pikachu">
+          <div class="pokemon-wrapper">
+            <i class="fa-sharp fa-solid fa-chevron-left" data-view="squirtle"></i>
+            <img class="pokemon-image" src="images/025.png" alt="Pikachu">
+            <i class="fa-sharp fa-solid fa-chevron-right" data-view="jigglypuff"></i>
+            <span>
+              <i class="fa-regular fa-circle" data-view="bulbasaur"></i>
+              <i class="fa-regular fa-circle" data-view="charmander"></i>
+              <i class="fa-regular fa-circle" data-view="squirtle"></i>
+              <i class="fa-sharp fa-solid fa-circle"></i>
+              <i class="fa-regular fa-circle" data-view="jigglypuff"></i>
+            </span>
+          </div>
+        </div>
+        <div class="view hidden" data-view="jigglypuff">
+          <div class="pokemon-wrapper">
+            <i class="fa-sharp fa-solid fa-chevron-left" data-view="pikachu"></i>
+            <img class="pokemon-image" src="images/039.png" alt="Jigglypuff">
+            <i class="fa-sharp fa-solid fa-chevron-right" data-view="bulbasaur"></i>
+            <span>
+              <i class="fa-regular fa-circle" data-view="bulbasaur"></i>
+              <i class="fa-regular fa-circle" data-view="charmander"></i>
+              <i class="fa-regular fa-circle" data-view="squirtle"></i>
+              <i class="fa-regular fa-circle" data-view="pikachu"></i>
+              <i class="fa-sharp fa-solid fa-circle"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
