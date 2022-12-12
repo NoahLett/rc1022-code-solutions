@@ -40,3 +40,15 @@ console.log(balance());
 
 const composite = traits.reduce((accumulator, currentValue) => Object.assign(accumulator, currentValue));
 console.log(composite);
+
+let totalAssets = account[0].amount;
+
+const balance2 = account.reduce((accumulator, currentValue) => {
+  if (currentValue.type === 'deposit') {
+    totalAssets += currentValue.amount;
+  } else if (currentValue.type === 'withdrawal') {
+    totalAssets -= currentValue.amount;
+  }
+  return totalAssets;
+});
+console.log(balance2);
