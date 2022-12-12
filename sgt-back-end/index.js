@@ -31,12 +31,8 @@ app.post('/api/grades', (req, res, next) => {
   const scoreFigure = Number(req.body.score);
   if (!Object.hasOwn(obj, 'name') || !Object.hasOwn(obj, 'course') || !Object.hasOwn(obj, 'score')) {
     res.status(400).json({ error: 'Please make sure your request includes the name, course, and score properties.' });
-    // eslint-disable-next-line no-useless-return
-    return;
   } else if (!Number.isInteger(scoreFigure) || scoreFigure < 0 || scoreFigure > 100) {
     res.status(400).json({ error: 'The score value is invalid. Please use a whole number between 0 and 100.' });
-    // eslint-disable-next-line no-useless-return
-    return;
   } else {
     const sql = `
     insert into "grades" ("name", "course", "score")
@@ -52,8 +48,6 @@ app.post('/api/grades', (req, res, next) => {
       .catch(err => {
         console.error(err);
         res.status(500).json({ error: 'An unexpected error occurred in our server.' });
-        // eslint-disable-next-line no-useless-return
-        return;
       });
   }
 });
@@ -64,16 +58,10 @@ app.put('/api/grades/:gradeId', (req, res, next) => {
   const scoreFigure = Number(req.body.score);
   if (!Number.isInteger(gradeId) || gradeId <= 0) {
     res.status(400).json({ error: 'The "gradeId" must be a positive integer.' });
-    // eslint-disable-next-line no-useless-return
-    return;
   } else if (!Object.hasOwn(obj, 'name') || !Object.hasOwn(obj, 'course') || !Object.hasOwn(obj, 'score')) {
     res.status(400).json({ error: 'Please ensure your replacement grade includes a name, course, and score property with legitimate values.' });
-    // eslint-disable-next-line no-useless-return
-    return;
   } else if (!Number.isInteger(scoreFigure) || scoreFigure < 0 || scoreFigure > 100) {
-    res.status(400).json({ error: 'The score value is invalid.Please use a whole number between 0 and 100.' });
-    // eslint-disable-next-line no-useless-return
-    return;
+    res.status(400).json({ error: 'The score value is invalid. Please use a whole number between 0 and 100.' });
   } else {
     const sql = `
       update "grades"
@@ -89,8 +77,6 @@ app.put('/api/grades/:gradeId', (req, res, next) => {
         const grade = result.rows[0];
         if (!grade) {
           res.status(404).json({ error: 'The server cannot find a grade with that "gradeId".' });
-          // eslint-disable-next-line no-useless-return
-          return;
         } else {
           res.status(200).json(grade);
         }
@@ -98,8 +84,6 @@ app.put('/api/grades/:gradeId', (req, res, next) => {
       .catch(err => {
         console.error(err);
         res.status(500).json({ error: 'An unexpected error occurred in our server.' });
-        // eslint-disable-next-line no-useless-return
-        return;
       });
   }
 });
@@ -108,8 +92,6 @@ app.delete('/api/grades/:gradeId', (req, res, next) => {
   const gradeId = Number(req.params.gradeId);
   if (!Number.isInteger(gradeId) || gradeId <= 0) {
     res.status(400).json({ error: 'The "gradeId" must be a positive integer.' });
-    // eslint-disable-next-line no-useless-return
-    return;
   } else {
     const sql = `
       delete
@@ -123,8 +105,6 @@ app.delete('/api/grades/:gradeId', (req, res, next) => {
         const grade = result.rows[0];
         if (!grade) {
           res.status(404).json({ error: 'The server cannot find a grade with that gradeId.' });
-          // eslint-disable-next-line no-useless-return
-          return;
         } else {
           res.sendStatus(204);
         }
