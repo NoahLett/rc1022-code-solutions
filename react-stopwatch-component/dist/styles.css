@@ -1,0 +1,34 @@
+.fa-circle {
+  position: absolute;
+  right: 50rem;
+  bottom: 20rem;
+  font-size: 15rem;
+  cursor: pointer;
+}
+
+.fa-solid,
+.fa-pause {
+  position: absolute;
+  right: 55.5rem;
+  bottom: 13rem;
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+.fa-play {
+  position: absolute;
+  right: 55rem;
+  bottom: 13rem;
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+.time {
+  position: absolute;
+  right: 52.5rem;
+  bottom: 19.5rem;
+  font-size: 5rem;
+  font-family: sans-serif;
+  text-align: center;
+  width: 10rem;
+}
