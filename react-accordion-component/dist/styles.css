@@ -1,0 +1,33 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  justify-content: center;
+  text-align: center;
+  width: 30rem;
+}
+
+.topic {
+  background-color: gray;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  margin-top: 0.15rem;
+  margin-bottom: 0.15rem;
+  cursor: pointer;
+  border: 1.5px solid black;
+}
+
+.text {
+  margin: 0;
+  font-size: 1.15rem;
+  text-align: left;
+  padding: 0.5rem;
+  border: 1.5px solid black;
+}
