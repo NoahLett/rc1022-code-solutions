@@ -1,0 +1,58 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.column-fifth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 19%;
+}
+
+.column-three-fifths {
+  display: flex;
+  flex-basis: 40%;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-chevron-right,
+.fa-chevron-left {
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.image {
+  width: 500px;
+}
+
+.circles {
+  margin: 3rem;
+}
+
+.fa-circle {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.filled {
+  background-color: black;
+  border-radius: 50%;
+}
