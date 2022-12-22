@@ -1,0 +1,38 @@
+User Can Sign Up
+  The client connects to the server, which is listening on port 3000. The hash route "#sign-in" is
+parsed in parse-route.js, resulting auth-form.jsx rendering the Sign In version of the AuthForm component.
+When the user clicks either the Sign Up button or the Register Now link, the auth form re-renders to show
+update the text in the submit button and small text. The handleChange method of the AuthForm component shows
+the text the user enters into both the username and password inputs in real time. Once the user has entered
+username and password into the inputs, those inputs, which are held as properties in this.state are stringified
+and sent in a fetch request. Depending on what the value of action is will determine which POST request is
+used in index.js. Since the user is signing up, the action will be "sign-up", resulting in app.post('/api/auth/sign-up)
+being run. The data supplied by the user is run through an initial conditonal, then the password is hashed and
+inserted into the database view sql insertion. Back on auth-form.jsx, the fetch request finishes by setting
+the hash route to 'sign-in', which renders the Sign In verison of the AuthForm component.
+
+User Can Sign In
+  The user now enters their stored username and password (in hashed form) into the inputs of the Sign In rendered
+version of the AuthForm component. Upon submit, another fetch request is made, with the action variable containing
+the string "sign-in", which causes a different POST request to be sent in index.js, app.post('/api/auth/sign-in').
+The entered username and password are ran through a conditional, and if either one is missing, a client error is thrown.
+If both are present, a sql selection is made to the database in which the entered username is used as a "search term", for
+lack of better words. If the username is found in the table, the userId and hashedPassword are retrieved and compared to
+the entered password via the argon2.verify() method. If the method evaluates to true, the client is granted a token via
+the jwt.sign() method, and the user property is assigned this token. On app.jsx, the handleSignIn method is called as a
+result of the onSignIn event of the Authform being triggered. This sets the state of the user property of this.state to
+the value of the user variable. Home.jsx then checks through a conditional whether the user property of the context property
+of the this object has a value, and it it does, the user gets Rick Rolled.
+
+User Can Stay Signed In
+  Since the value of this.context.user still contains the original value of the payload (token) acquired during the sign
+in post request, it passes the conditional check on home.jsx. This context is created via the createContext() method of the
+app object in app-context.js. As long as this context does not change, the user is considered "logged in" and is granted access
+to be Rick Rolled.
+
+User Can Sign Out
+  In the navbar.jsx file, the sign out button gives the user the ability to have their token removed. When the sign out button
+is clicked, the onClick event calls the handleSignOut() method of the App class in app.jsx, which calls the removeItem method
+of localStorage, with an argument of react-context-jwt. It then calls the setState() method of the this object to change the
+value of the user property to null, which causes the home.jsx conditonal to fail. This results in the user no longer being Rick
+Rolled, and is subsequently redirected to the the sign in version of auth form in the auth page.
