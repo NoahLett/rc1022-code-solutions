@@ -225,6 +225,82 @@
   margin-left: 2rem;
 }
 
+.foundation-text-block {
+  width: 38rem;
+  color: white;
+  margin-left: 4rem;
+}
+
+.foundation-head {
+  font-family: "Tiempos Headline", serif;
+  font-size: 2.5rem;
+}
+
+.foundation-text {
+  font-family: Avenir, sans-serif;
+  font-size: 1.25rem;
+  width: 40rem;
+}
+
+.product-image-one {
+  width: 85%;
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+}
+
+.product-image-three,
+.product-image-two {
+  width: 85%;
+}
+
+.population-head,
+.command-head {
+  font-family: "Tiempos Headline", serif;
+  color: #717171;
+}
+
+.performance-head {
+  font-family: "Tiempos Headline", serif;
+  color: #717171;
+  width: 30rem;
+}
+
+.performance-text,
+.population-text,
+.command-text {
+  font-family: Avenir, sans-serif;
+  color: #717171;
+  font-size: 1.05rem;
+  width: 28rem;
+  line-height: 1.45rem;
+}
+
+.performance-link,
+.population-link,
+.charting-link {
+  font-family: Avenir, sans-serif;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+.performance-quote,
+.population-quote,
+.command-quote {
+  font-family: serif;
+  font-style: italic;
+  color: #717171;
+  font-size: 1.05rem;
+  width: 28rem;
+  line-height: 1.45rem;
+}
+
+.performance-quote-ref,
+.population-quote-ref,
+.command-quote-ref {
+  font-family: Avenir, sans-serif;
+  color: #717171;
+}
+
 #nav-bar {
   text-align: right;
   margin: 2.75rem;
@@ -273,6 +349,50 @@
 #bottom-white-block {
   background-color: #fafafa;
   height: 6rem;
+}
+
+#foundation-block {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 1200px;
+  height: 550px;
+  background-image: linear-gradient(rgb(0 0 0 / 25%), rgb(0 0 0 / 25%)), url("images/product/product-header.jpg");
+  background-size: 100%;
+  background-position: center;
+  position: relative;
+  margin-top: 5rem;
+}
+
+#performance-block,
+#command-block {
+  background-color: #fafafa;
+  margin-top: 5rem;
+  height: 45rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#product-image-block-three,
+#product-image-block-two,
+#product-image-block-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#performance-text-block,
+#command-text-block {
+  margin-top: 7rem;
+  margin-left: 5rem;
+}
+
+#population-block {
+  margin-top: 3rem;
+  max-width: 1225px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 hr {
