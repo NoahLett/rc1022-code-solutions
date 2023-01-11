@@ -2,5 +2,9 @@
 /* exported append */
 
 function append(list, value) {
-  list.next.next.next.next = new LinkedList(value);
+  let currentNode = list;
+  while (currentNode.next !== null) {
+    currentNode = currentNode.next;
+  }
+  currentNode.next = new LinkedList(value);
 }

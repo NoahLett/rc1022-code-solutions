@@ -2,5 +2,9 @@
 /* exported insertNext */
 
 function insertNext(list, value) {
-  list.next = new LinkedList(value, list.next.data, list.next.next.data, list.next.next.next.data);
+  const lastPart = list.next;
+  const currentNode = list;
+  const newNode = new LinkedList(value);
+  currentNode.next = newNode;
+  currentNode.next.next = lastPart;
 }

@@ -2,6 +2,8 @@
 /* exported prepend */
 
 function prepend(list, value) {
-  const prependList = new LinkedList(value, list.data, list.next.data, list.next.next.data, list.next.next.next.data);
-  return prependList;
+  const lastPart = list;
+  const newHead = new LinkedList(value);
+  newHead.next = lastPart;
+  return newHead;
 }
